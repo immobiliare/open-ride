@@ -2,6 +2,6 @@
     <img src="public/images/landing-image.svg" alt="OpenRide" />
 </p>
 
-# OpenRide
+<h1 align="center">OpenRide</h1>
 
-🎒 Offri o cerca un passaggio per andare a scuola 🏫
+<p align="center">🎒 Offri o cerca un passaggio per andare a scuola 🏫</p>
