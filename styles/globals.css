@@ -1,0 +1,23 @@
+html,
+body,
+[id="__next"],
+[id="__next"] > *,
+.leaflet-container {
+  height: 100%;
+}
+.leaflet-default-icon-path {
+  background-image: url(/images/marker-icon.png) !important;
+}
+
+.stepContainer {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.customRadioLabel {
+  display: inline-block;
+}
+
+.customRadioLabel svg {
+  vertical-align: text-top;
+}
