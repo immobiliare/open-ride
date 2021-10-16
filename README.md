@@ -3,8 +3,9 @@
 </p>
 
 <h1 align="center">OpenRide</h1>
-
 <p align="center">🎒 Offri o cerca un passaggio per andare a scuola 🏫</p>
+
+<hr />
 
 > Software realizzato per la partecipazione alla [CodeWeek 2021](http://www.codeweek.it/open-ride/), 
 la serie di eventi che ogni anno si pone l’obiettivo di diffondere la cultura del coding e della 
@@ -26,26 +27,37 @@ N.B. Tutti i successivi comandi devono essere eseguiti all’interno del proprio
 
 #### Node
 
-Per funzionare la webapp ha bisogno che sia installato l’environment Node.js sul tuo computer.  
-Consigliamo l’installazione di [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) per 
-facilitare il tutto:
+Per far funzionare la webapp sul tuo computer è necessario aver installato l’environment di esecuzione: [Node.js](https://nodejs.org/it/)!
+
+Consigliamo l'utilizzo del tool [Volta](https://volta.sh/) che faciliterà questo processo.
+
+##### MacOS/Unix
+
+> *NB*: Se stai utilizzando Windows ed hai attivo il subsystem Ubuntu segui i passi di seguito
+> Se invece utilizzi il terminale nativo `cmd.exe` o `Powershell` [segui qui](#windows)
+
+Installiamo Volta
+
 ```bash
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+curl https://get.volta.sh | bash
 ```
 
-Installiamo la versione di [Node.js](https://nodejs.org/it/) corretta
+Installiamo la versione di Node necessaria
+
+> *NB* Questo installerà anche il package manager [NPM](https://www.npmjs.com/)
+
 ```bash
-nvm install v14.17.6
-nvm alias default v14.17.6
+volta install node@14.17.6
 ```
 
-#### Yarn
+##### Windows
 
-Ora Installiamo [Yarn](https://yarnpkg.com/) che ci permetterà di aggiungere al nostro software 
-le opportune dipendenze:
-```bash
-npm install -g yarn
-```
+Prima di poter installare volta sul terminale Windows (cmd.exe) è necessario prima:
+
+- Scaricare l'installer di [Volta per Windows](https://github.com/volta-cli/volta/releases/download/v1.0.5/volta-1.0.5-windows-x86_64.msi)
+- Cliccare sull'installer e seguire le istruzioni
+- Abilitare la [modalità sviluppatori](https://docs.microsoft.com/it-it/windows/apps/get-started/enable-your-device-for-development#accessing-settings-for-developers)
+- Apriamo `cmd.exe` e installiamo Node.js con `volta install node@14.17.6`
 
 #### Git
 Per poter portare sulla propria macchina il software consigliamo anche l’installazione di [Git](https://git-scm.com/). 
@@ -64,12 +76,7 @@ Entriamo dentro alla directory appena creata:
 cd open-ride
 ```
 
-Impostiamo per questo software l’utilizzo della versione di Node.js sopra installata:
-```bash
-nvm use
-```
-
-Installiamo le dipendenze della nostra webapp definite all’interno del [package.json](./package.json): 
+Installiamo le dipendenze della nostra webapp definite all’interno del [package.json](./package.json):
 ```bash
 yarn intall
 ```
