@@ -40,7 +40,7 @@ Installiamo Volta
 
 ```bash
 curl https://get.volta.sh | bash
-# OR
+# oppure se non hai installato curl, puoi usare wget!
 wget -qO- https://get.volta.sh | bash
 ```
 
