@@ -33,13 +33,15 @@ Consigliamo l'utilizzo del tool [Volta](https://volta.sh/) che faciliterà quest
 
 ##### MacOS/Unix
 
-> *NB*: Se stai utilizzando Windows ed hai attivo il subsystem Ubuntu segui i passi di seguito
-> Se invece utilizzi il terminale nativo `cmd.exe` o `Powershell` [segui qui](#windows)
+> *NB*: Se utilizzi il terminale nativo `cmd.exe` o `Powershell` [segui qui](#windows)
+> Se invece stai utilizzando il subsystem Ubuntu su Windows segui i passi di seguito
 
 Installiamo Volta
 
 ```bash
 curl https://get.volta.sh | bash
+# OR
+wget -qO- https://get.volta.sh | bash
 ```
 
 Installiamo la versione di Node necessaria
