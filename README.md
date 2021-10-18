@@ -68,9 +68,11 @@ Per poter portare sulla propria macchina il software consigliamo anche l’insta
 La procedura potrebbe variare in base al vostro sistema operativo, quindi vi rimandiamo alla 
 [documentazione ufficiale](https://github.com/git-guides/install-git#:~:text=To%20install%20Git%2C%20run%20the,installation%20by%20typing%3A%20git%20version%20.).
 
-### Install
+### Install App
 
-Ora siamo pronti per poter installare il software:
+Ora siamo pronti per poter installare l’app.  
+
+Scarichiamo i sorgenti:
 ```bash
 git clone git@github.com:immobiliare/open-ride.git
 ```
